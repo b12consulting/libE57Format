@@ -71,14 +71,16 @@ endif(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 find_package(Threads REQUIRED)
 
 set(Xerces_USE_STATIC_LIBS On)
-find_package(Xerces QUIET)
-if (NOT Xerces_FOUND)
-    set(XERCES_ROOT CACHE PATH "Location of the xerces library")
-    message(FATAL_ERROR
-"Unable to find xerces library.
-Please set the the XERCES_ROOT to point to the root of the xerces directory."
-)
-endif (NOT Xerces_FOUND)
+
+###
+### Custom modifications !!!
+### To be adapted according to the installation
+###
+set(Xerces_INCLUDE_DIR "C:/Sources/scandrone/Tools/xerces-c/src")
+set(Xerces_LIBRARY     "C:/Sources/scandrone/Tools/xerces-c/Build/Win64/VC12/Release/xerces-c_3_1.lib")
+###
+### End custom modification
+###
 
 set(XML_LIBRARIES ${Xerces_LIBRARY})
 set(XML_INCLUDE_DIRS ${Xerces_INCLUDE_DIR})
