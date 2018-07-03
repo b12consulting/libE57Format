@@ -76,8 +76,9 @@ set(Xerces_USE_STATIC_LIBS On)
 ### Custom modifications !!!
 ### To be adapted according to the installation
 ###
-set(Xerces_INCLUDE_DIR "C:/Sources/scandrone/Tools/xerces-c/src")
-set(Xerces_LIBRARY     "C:/Sources/scandrone/Tools/xerces-c/Build/Win64/VC12/Release/xerces-c_3_1.lib")
+set(Xerces_ROOT  "C:/Sources/scandrone/Tools/xerces-c-3.2.1/libs")
+set(Xerces_LIBRARY  ${Xerces_ROOT}/lib/xerces-c_3_2.lib)
+set(Xerces_INCLUDE_DIR ${Xerces_ROOT}/include)
 ###
 ### End custom modification
 ###
