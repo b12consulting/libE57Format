@@ -7,3 +7,4 @@ CMakeCache.txt
 *.vcxproj.*
 *.sln
 *.cmake
+Release/
