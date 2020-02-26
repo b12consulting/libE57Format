@@ -1,0 +1,10 @@
+.vs/
+CMakeFiles/
+E57Format.dir/
+x64/
+CMakeCache.txt
+*.vcxproj
+*.vcxproj.*
+*.sln
+*.cmake
+Release/
